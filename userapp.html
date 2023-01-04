@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="col-md-4">
+  <div class="content-section" style="left: 20px; position: fixed;">
+    <h3>Hello, {{ current_user.username }}</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-light"><a href="/userapp/pastreports">Past reports</a></li>
+        <li class="list-group-item list-group-item-light"><a href="/userapp/scanpapers">Scan papers</a></li>
+      </ul>
+  </div>
+</div>
+
+{% endblock %}
